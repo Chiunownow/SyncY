@@ -2,7 +2,7 @@
 config syncy
 	option syncylog ''
 	option blocksize '10'
-	option ondup 'rename'
+	option ondup 'overwrite'
 	option datacache 'on'
 	option excludefiles '*/Thumbs.db'
 	option listnumber '100'
@@ -13,15 +13,15 @@ config syncy
 	option speedlimitperiod '0-0'
 	option syncperiod '0-24'
 	option syncinterval '3600'
-	option tasknumber '2'
-	option threadnumber '2'
+	option tasknumber '3'
+	option threadnumber '50'
 
 config syncpath
-	#option localpath '/mnt/example'
-	#option remotepath '/apps/SyncY/example'
-	#option enable '1'
-	#option synctype 'upload'
-	#option encryption 'ARC4'	# 0 is disable encryption
-	#option encryptkey 'This is a encrypt key'
+	option localpath '/download'
+	option remotepath '/apps/SyncY/Syncy-docker'
+	option enable '1'
+	option synctype 'sync'
+	option encryption '0'	# 0 is disable encryption
+	option encryptkey 'This is a encrypt key'
 
 config syncytoken
