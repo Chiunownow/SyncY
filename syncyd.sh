@@ -1,4 +1,3 @@
-#!/bin/sh /etc/rc.common
 #####################################################################################
 # 
 # Author: wishinlife
@@ -10,7 +9,7 @@
 
 
 pid_file="/var/run/syncy.pid"
-start_cmd="/usr/bin/syncy.py &"
+start_cmd="/syncy/bin/syncy.py &"
 
 while true; do
 	if [ -e /var/run/syncy.pid ]; then
