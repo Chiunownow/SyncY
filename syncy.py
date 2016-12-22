@@ -47,7 +47,7 @@ if os.name == 'nt':
     __CHARSET__ = 'GBK'    # windows charset
     __TMP_DIR__ = os.environ['TMP'].replace('\\', '/')
 else:
-    __CONFIG_FILE__ = '/etc/config/syncy'
+    __CONFIG_FILE__ = '/syncy/bin/syncy'
     __PIDFILE__ = '/var/run/syncy.pid'
     __CHARSET__ = 'UTF-8'  # linux charset
     __TMP_DIR__ = '/tmp'
