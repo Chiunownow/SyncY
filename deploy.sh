@@ -4,5 +4,5 @@ wget -P /usr/bin/ https://raw.githubusercontent.com/Chiunownow/SyncY/master/sync
 wget -P /usr/bin/ https://raw.githubusercontent.com/Chiunownow/SyncY/master/syncy.py
 chmod +x /usr/bin/syncy.py
 chmod +x /usr/bin/syncyd.sh
-rm install.sh
+rm deploy.sh
 syncy.py
