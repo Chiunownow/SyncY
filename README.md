@@ -29,7 +29,7 @@ SyncY官方网址：http://www.syncy.cn
 
 执行以下命令运行Syncy
 
-    sudo docker start syncy /usr/bin/syncyd.sh
+    sudo docker start syncy
 
 执行以下命令查看Syncy运行状态
 
@@ -39,11 +39,13 @@ SyncY官方网址：http://www.syncy.cn
 
 在 `/etc/rc.local` 中添加以下命令，使syncy随宿主机自动启动（需要先配置好docker自动启动）
 
-    docker start syncy /usr/bin/syncyd.sh
-
+    docker start syncy
+    
 ******
 # 更新日志
-2016/12/23 更新
+## 2016/12/25
+1. 圣诞快乐！修复一处错误；修改启动命令
+## 2016/12/23
 0. 之前做得比较随意，这次推到重新来过，变动较大，原用户更新一定要看更新日志
 1. 改为用 `Dockerfile` 构建镜像
 2. 使用 `deploy.sh` 来创建容器内的目录，下载程序文件并配置等
